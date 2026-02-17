@@ -518,77 +518,79 @@ h4{
   padding: 5rem 0;
 }
 
-.services__banner__wrapper{
+/* Services */
+.services {
+  padding: 4rem 0;
+  background-color: var(--clr-light);
+}
+
+.services__wrapper {
+  padding: 4rem 35rem 4rem 37rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  justify-content: space-between;
+  gap: 10rem;
 }
 
-.services__text{
-  display: grid;
+.services__wrapper:nth-child(even) {
+  grid-template-columns: 1fr 1fr;
+  direction: rtl;
+  background: var(--clr-dark);
+  .services {
+    background-color: var(--clr-dark);
+  }
+  .services__text p,
+  .services__text h6 {
+    color: var(--clr-light);
+  }
 }
 
-.services__text h2{
+.services__wrapper:nth-child(even) > * {
+  direction: ltr;
+  .services__img {
+    margin-left: 10rem;
+  }
+}
+
+.services__wrapper .chevron i{
   color: var(--clr-primary);
+}
+
+.services__text h2 {
+  font-size: 48px;
   font-weight: 700;
-  font-size: 40px;
-  max-width: 35rem;
-  line-height: 1;
-}
-
-.services__text .info{
-  margin-top: 7rem;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: 1rem;
-}
-
-.services__text .services__price{
-  margin-top: 7rem;
-}
-
-.services__price h3{
-  font-size: 22px;
-  font-weight: 500;
   color: var(--clr-primary);
 }
 
-.services__price .small__text{
-  font-size: 8px;
-  width: 125px;
-}
-
-.services__banner__wrapper .services__img{
+.services__text p {
+  text-align: justify;
   width: 100%;
+}
+.services__text p:nth-child(2) {
+  margin-top: 2rem;
+}
+.services__text p:nth-child(3) {
+  margin-top: 2rem;
+}
+
+.services__text p:nth-child(4) {
+  margin-top: 5rem;
+}
+
+.services__text h5 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--clr-primary);
+}
+
+.services__text p:last-child {
+  font-size: 14px;
+}
+
+.services .chevron {
+  grid-column: 1 / -1;
   display: flex;
-  justify-content: end;
-}
-
-.service.dark{
-  background-color: var(--clr-dark);
-}
-.service.dark p{
-  color: var(--clr-light);
-}
-.service.dark .services__img{
-  justify-content: start;
-}
-
-
-.services__img img{
-  width: 40rem;
-}
-
-.services__img{
-  display: flex;
-  align-items: center;
-}
-
-.container{
-  padding: 6rem 0;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+  justify-content: center;
 }
 
 /* ASSETS */
