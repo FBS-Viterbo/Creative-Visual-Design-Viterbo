@@ -519,17 +519,18 @@ h4{
 }
 
 /* Services */
-.services {
-  padding: 4rem 0;
-  background-color: var(--clr-light);
-}
 
 .services__wrapper {
-  padding: 4rem 35rem 4rem 37rem;
+  height: 100vh;
+  padding: 10rem 35rem 0 37rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   gap: 10rem;
+}
+
+.services__wrapper:first-child{
+  height: 85vh;
 }
 
 .services__wrapper:nth-child(even) {
@@ -591,6 +592,10 @@ h4{
   grid-column: 1 / -1;
   display: flex;
   justify-content: center;
+}
+
+.services__wrapper:last-child .chevron{
+    display: none;
 }
 
 /* ASSETS */
