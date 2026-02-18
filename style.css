@@ -685,6 +685,10 @@ h4{
 }
 
 /* Update */
+.update{
+  margin-bottom: 10rem;
+}
+
 .update .title h1{
   font-size: 71px;
   color: var(--clr-primary);
@@ -726,7 +730,7 @@ h4{
 .update .update__right{
   display: flex;
   flex-direction: column;
-  gap: 11rem;
+  gap: 14.5rem;
 }
 
 .update .update__categories{
@@ -809,7 +813,7 @@ h4{
   gap: 3rem;
 }
 
-.update .update__content h5{
+.update .update__content a{
   color: var(--clr-primary);
   margin-bottom: 2rem;
 }
@@ -822,6 +826,19 @@ h4{
 .update .tags .buttons a.btn__secondary:hover{
   background-color: var(--clr-light);
   color: var(--clr-dark);
+}
+
+.update .update__content h5:hover{
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+.update .update__img img{
+  width: 100%;
+}
+
+.update .res__content .info .info__title{
+  font-weight: 700;
 }
 
 /* ASSETS */
